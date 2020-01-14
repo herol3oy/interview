@@ -1,0 +1,77 @@
+body {
+  background-color: var(--clr-light);
+  a {
+    color: inherit;
+    text-decoration: inherit;
+
+    &:hover {
+      color: inherit;
+      text-decoration: inherit;
+    }
+  }
+  p {
+    font-family: var(--ff-secondary);
+    font-size: 1.5rem;
+  }
+}
+
+.title {
+  font-family: var(--ff-primary);
+  color: var(--clr-logo);
+}
+
+img {
+  // filter: grayscale(100%);
+  transition: filter 1s;
+  cursor: pointer;
+
+  &:hover {
+    filter: none;
+  }
+}
+
+.img-cover {
+  background: var(--clr-light) no-repeat 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 200px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid #fff 1px;
+}
+
+.card-body {
+  background-color: var(--clr-light);
+}
+
+.interview-text {
+//   font-size: 1.5em;
+  line-height: 1.5em;
+}
+
+.interview-area {
+  margin-top: -7rem;
+}
+
+.floating-header {
+  visibility: hidden;
+  background-color: var(--clr-transparent);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: visible;
+  z-index: 2;
+}
+
+.card {
+  @include bordertop;
+}

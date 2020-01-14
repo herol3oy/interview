@@ -1,0 +1,127 @@
+@import url("https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css");
+@import url("https://fonts.googleapis.com/css?family=Dosis|Passion+One&display=swap");
+:root {
+  --ff-primary: "Passion One", cursive;
+  --ff-secondary: "Dosis", sans-serif;
+  --clr-light: #baffdc6e;
+  --clr-dark: #1b5e20;
+  --clr-accent: #16e0bd;
+  --clr-logo: #263238;
+  --clr-transparent: #ffffff94;
+  --fs-h1: 3rem;
+  --fs-h2: 2.25rem;
+  --fs-h3: 1.25rem;
+  --fs-body: 1rem;
+  --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
+        0.125em 0.125em 0.25em rgba(0,0,0,.15);
+}
+
+::selection {
+  color: white;
+  background: var(--clr-accent);
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+/* 
+      ##Device = Laptops, Desktops
+      ##Screen = B/w 1025px to 1280px
+    */
+/* 
+      ##Device = Tablets, Ipads (portrait)
+      ##Screen = B/w 768px to 1024px
+    */
+/* 
+      ##Device = Tablets, Ipads (landscape)
+      ##Screen = B/w 768px to 1024px
+    */
+/* 
+      ##Device = Low Resolution Tablets, Mobiles (Landscape)
+      ##Screen = B/w 481px to 767px
+    */
+/* 
+      ##Device = Most of the Smartphones Mobiles (Portrait)
+      ##Screen = B/w 320px to 479px
+    */
+@media (min-width: 320px) and (max-width: 480px) {
+  .interview-area {
+    margin-top: 0 !important;
+  }
+}
+body {
+  background-color: var(--clr-light);
+}
+body a {
+  color: inherit;
+  text-decoration: inherit;
+}
+body a:hover {
+  color: inherit;
+  text-decoration: inherit;
+}
+body p {
+  font-family: var(--ff-secondary);
+  font-size: 1.5rem;
+}
+
+.title {
+  font-family: var(--ff-primary);
+  color: var(--clr-logo);
+}
+
+img {
+  transition: filter 1s;
+  cursor: pointer;
+}
+img:hover {
+  filter: none;
+}
+
+.img-cover {
+  background: var(--clr-light) no-repeat 50%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 200px;
+}
+
+.avatar {
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  -o-object-fit: cover;
+  object-fit: cover;
+  border: solid #fff 1px;
+}
+
+.card-body {
+  background-color: var(--clr-light);
+}
+
+.interview-text {
+  line-height: 1.5em;
+}
+
+.interview-area {
+  margin-top: -7rem;
+}
+
+.floating-header {
+  visibility: hidden;
+  background-color: var(--clr-transparent);
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  visibility: visible;
+  z-index: 2;
+}
+
+.card {
+  border-top: solid 2px #fff;
+}
+
+/*# sourceMappingURL=style.css.map */
