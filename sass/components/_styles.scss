@@ -51,7 +51,7 @@ img {
 }
 
 .interview-text {
-//   font-size: 1.5em;
+  //   font-size: 1.5em;
   line-height: 1.5em;
 }
 
@@ -74,4 +74,14 @@ img {
 
 .card {
   @include bordertop;
+}
+
+.video-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  .text-over-video {
+    color: red !important;
+  }
 }
