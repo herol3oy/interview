@@ -11,7 +11,7 @@ body {
   }
   p {
     font-family: var(--ff-secondary);
-    font-size: 1.5rem;
+    font-size: 1rem;
   }
 }
 
@@ -38,16 +38,13 @@ img {
 }
 
 .avatar {
+  margin-top: 2rem;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
   -o-object-fit: cover;
   object-fit: cover;
-  border: solid #fff 1px;
-}
-
-.card-body {
-  background-color: var(--clr-light);
+  border: solid 1px var(--clr-accent);
 }
 
 .interview-text {
@@ -84,4 +81,21 @@ img {
   .text-over-video {
     color: red !important;
   }
+}
+
+.top-banner {
+  background-color: var(--clr-accent);
+  // box-shadow: inset 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+}
+
+.badge {
+  background-color: var(--clr-accent);
+}
+
+.text-muted {
+  // color: var(--clr-accent) !important;
+}
+
+.accent-color {
+  color: var(--clr-accent);
 }

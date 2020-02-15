@@ -1,4 +1,3 @@
 @mixin bordertop {
-    border-top: solid 2px #fff;
-    
+  border-top: solid 2px var(--clr-accent);
 }
